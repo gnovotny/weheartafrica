@@ -1,0 +1,18 @@
+@tailwind utilities;
+
+
+@layer utilities {
+
+  .font-heading {
+    font-family: var(--font-heading);
+    @apply font-black;
+  }
+
+  .fit {
+    @apply w-full h-full;
+  }
+
+  .text-stroke {
+    -webkit-text-stroke: 2px black;
+  }
+}

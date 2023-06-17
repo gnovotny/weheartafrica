@@ -1,0 +1,20 @@
+@tailwind components;
+
+.c-scrollbar {
+
+  @apply z-[100] absolute right-0 top-0 w-[11px] h-full !opacity-100 transition-[opacity,transform] duration-300 origin-right;
+
+  &:hover,
+  .has-scroll-dragging & {
+    @apply scale-x-150;
+  }
+
+}
+
+.c-scrollbar_thumb {
+  @apply absolute top-0 right-0 bg-black opacity-50 w-[7px] rounded-[10px] m-[2px] cursor-grab transition-[height] duration-300;
+
+  .has-scroll-dragging & {
+    @apply cursor-grabbing;
+  }
+}

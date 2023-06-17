@@ -1,0 +1,1 @@
+export { weightedVoronoi } from './weightedVoronoi'

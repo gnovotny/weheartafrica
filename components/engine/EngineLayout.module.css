@@ -1,0 +1,104 @@
+.root {
+  @apply w-screen h-screen relative;
+
+  &.textured {
+    @screen md {
+      background: url(/assets/bg_canvas-repeat_grey_small.jpg) repeat 50%/800px 400px;
+    }
+  }
+}
+
+.texture {
+  @apply pointer-events-none absolute inset-0 w-full h-full;
+}
+
+.bgTexture {
+
+  background: url(/assets/bg_canvas-repeat_grey.jpg) repeat 50%/400px 200px;
+
+  &.x2 {
+    background: url(/assets/bg_canvas-repeat_grey.jpg) repeat 50%/800px 400px;
+  }
+
+  &.x3 {
+    background: url(/assets/bg_canvas-repeat_grey.jpg) repeat 50%/1200px 600px;
+  }
+
+
+  &:after {
+
+    @apply pointer-events-none absolute inset-0 w-full h-full;
+    content: '';
+    background: url(/assets/bg_texture.png) repeat 50%/130px 130px;
+
+    &.x2 {
+      background: url(/assets/bg_texture.png) repeat 50%/260px 260px;
+    }
+
+    &.x3 {
+      background: url(/assets/bg_texture.png) repeat 50%/390px 390px;
+    }
+  }
+}
+
+.fgTexture {
+
+
+
+  background: url(/assets/fg_texture-2.png) repeat 50%/130px 130px;
+
+  &.x2 {
+    background: url(/assets/fg_texture-2.png) repeat 50%/260px 260px;
+  }
+
+  &.x3 {
+    background: url(/assets/fg_texture-2.png) repeat 50%/390px 390px;
+  }
+
+  &:after {
+
+    @apply pointer-events-none absolute inset-0 w-full h-full;
+    content: '';
+    background: url(/assets/bg_canvas-repeat-3-white.png) repeat 50%/300px 150px;
+
+
+    &.x2 {
+      background: url(/assets/bg_canvas-repeat-3-white.png) repeat 50%/600px 300px;
+    }
+
+    &.x3 {
+      background: url(/assets/bg_canvas-repeat-3-white.png) repeat 50%/900px 450px;
+    }
+  }
+}
+
+
+.fgTexture2 {
+
+
+
+  background: url(/assets/fg_texture-2.png) repeat 0%/130px 130px;
+
+  &.x2 {
+    background: url(/assets/fg_texture-2.png) repeat 0%/260px 260px;
+  }
+
+  &.x3 {
+    background: url(/assets/fg_texture-2.png) repeat 0%/390px 390px;
+  }
+
+  &:after {
+
+    @apply pointer-events-none absolute inset-0 w-full h-full;
+    content: '';
+    background: url(/assets/bg_canvas-repeat-3-white.png) repeat 0%/300px 150px;
+
+    &.x2 {
+      background: url(/assets/bg_canvas-repeat-3-white.png) repeat 0%/600px 300px;
+    }
+
+    &.x3 {
+      background: url(/assets/bg_canvas-repeat-3-white.png) repeat 0%/900px 450px;
+    }
+  }
+}

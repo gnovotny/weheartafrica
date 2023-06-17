@@ -1,0 +1,22 @@
+{
+  "name": "We <3 Africa",
+  "short_name": "We <3 Africa",
+  "description": "We <3 Africa -> https://weheartafrica.vercel.app",
+  "display": "standalone",
+  "start_url": "/",
+  "theme_color": "#050606",
+  "background_color": "#ee242c",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+Javascript Clipper Library is dual licenced.
+
+The actual Clipper Library is licenced as the original Angus Johnson's Clipper Library, which uses Boost Software Licence.
+
+Javascript Clipper Library uses an implementation of the biginteger library JSBN of Tom Wu, which is licenced under a BSD license. See LICENSE for details.

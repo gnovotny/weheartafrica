@@ -1,0 +1,26 @@
+@import 'fonts.css';
+@import 'base.css';
+@import 'components.css';
+@import 'utilities.css';
+@import 'chrome-bug.css';
+
+body {
+  font-family: var(--font-sans);
+  @apply transition-colors duration-200;
+
+  &::-webkit-scrollbar {
+    width: 16px;
+    background-color: var(--primary);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 4px solid transparent;
+    background-clip: content-box;
+    background-color: var(--secondary);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply transition-colors duration-150;
+  }
+}

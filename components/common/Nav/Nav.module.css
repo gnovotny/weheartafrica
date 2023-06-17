@@ -1,0 +1,30 @@
+.root {
+  @apply lg:hidden relative flex flex-row items-center;
+  pointer-events: initial;
+}
+
+.list {
+  @apply flex flex-row items-center justify-items-end h-full;
+}
+
+.item {
+  @apply mr-6 cursor-pointer relative transition ease-in-out duration-100 flex items-center outline-none text-primary;
+
+  &:hover {
+    @apply text-accent-6 transition scale-110 duration-100;
+  }
+
+  &:last-child {
+    @apply mr-0;
+  }
+
+  &:focus,
+  &:active {
+    @apply outline-none;
+  }
+}
+
+.hamburger {
+  @apply cursor-pointer duration-100 ease-in-out w-7 h-7 lg:w-8 lg:h-8;
+  stroke: var(--primary);
+}

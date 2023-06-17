@@ -1,0 +1,113 @@
+@tailwind base;
+
+:root {
+  --primary: #F0ECE1;
+  --primary-2: #b4b4b4;
+  --secondary: #1a1a1e;
+  --secondary-2: #1a1a1e;
+
+  --selection: var(--cyan);
+
+  --text-base: #1a1a1e;
+  --text-primary: #1a1a1e;
+  --text-secondary: #F0ECE1;
+
+  --hover: rgba(0, 0, 0, 0.075);
+  --hover-1: rgba(0, 0, 0, 0.15);
+  --hover-2: rgba(0, 0, 0, 0.25);
+  --cyan: #22b8cf;
+  --green: #37b679;
+  --red: #da3c3c;
+  --purple: #f81ce5;
+  --blue: #0070f3;
+
+  --pink: #ff0080;
+  --pink-light: #ff379c;
+
+  --magenta: #eb367f;
+
+  --violet: #7928ca;
+  --violet-dark: #4c2889;
+
+  --accent-0: #fff;
+  --accent-1: #fafafa;
+  --accent-2: #eaeaea;
+  --accent-3: #999999;
+  --accent-4: #888888;
+  --accent-5: #3a5dae;
+  --accent-6: #444444;
+  --accent-7: #333333;
+  --accent-8: #111111;
+  --accent-9: #000;
+
+  --grayscale-0: #fff;
+  --grayscale-1: #fafafa;
+  --grayscale-2: #eaeaea;
+  --grayscale-3: #999999;
+  --grayscale-4: #888888;
+  --grayscale-5: #666666;
+  --grayscale-6: #444444;
+  --grayscale-7: #333333;
+  --grayscale-8: #111111;
+  --grayscale-9: #000;
+
+  --font-sans: 'a', -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue',
+  'Helvetica', sans-serif;
+
+  --font-heading: 'md', -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue',
+  'Helvetica', sans-serif;
+
+  --font-heading-cond: 'md', -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue',
+  'Helvetica', sans-serif;
+
+  --font-dymo-label: 'il', -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue',
+  'Helvetica', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+
+  box-sizing: border-box;
+  touch-action: manipulation;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  &.has-scroll-dragging {
+    user-select: none;
+  }
+}
+
+html,
+body {
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-primary);
+  overscroll-behavior-x: none;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  position: relative;
+  margin: 0;
+}
+
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}

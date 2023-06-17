@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'md';
+  src: url('/fonts/md/md-Regular.eot');
+  src: url('/fonts/md/md-Regular.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/md/md-Regular.woff2') format('woff2'),
+  url('/fonts/md/md-Regular.woff') format('woff'),
+  url('/fonts/md/md-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'md';
+  src: url('/fonts/md/md-Bold.eot');
+  src: url('/fonts/md/md-Bold.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/md/md-Bold.woff2') format('woff2'),
+  url('/fonts/md/md-Bold.woff') format('woff'),
+  url('/fonts/md/md-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "il";
+  src:url('/fonts/il/il-reversed.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family:"a";
+  src:url("/fonts/a/a.woff2") format("woff2"),url("/fonts/a/a.woff") format("woff"),url("/fonts/a/a.otf") format("opentype");
+  font-display:auto;
+  font-style:normal;
+  font-weight:400;
+  font-stretch:normal;
+}
+
+@font-face {
+  font-family:"a";
+  src:url("/fonts/a/a-semibold.woff2") format("woff2"),url("/fonts/a/a-semibold.woff") format("woff"),url("/fonts/a/a-semibold.otf") format("opentype");
+  font-display:auto;
+  font-style:normal;
+  font-weight:600;
+  font-stretch:normal;
+}

@@ -1,0 +1,61 @@
+.root {
+  @apply absolute opacity-0 will-change-[opacity,transform];
+
+  /*
+  @apply hidden
+  @apply will-change-[width,height,transform,clip-path];
+  @apply transition-[opacity,color,background-color] duration-1000;
+  */
+
+  /*transition-[width,height] duration-1000;*/
+
+  /* flex flex-col justify-center items-center */
+
+  /*
+  transition: width, height, clip-path ease-out 200ms;
+  */
+
+  /*perspective: 1000px;
+  perspective-origin: 50% 50%;*/
+
+  & .inner {
+    @apply absolute top-0 left-0 will-change-[transform] -translate-x-1/2 -translate-y-1/2 flex justify-center items-center;
+
+    /*
+    contain: strict;
+    */
+
+   /* & > * {
+      @apply  -translate-x-1/2 -translate-y-1/2;
+    }*/
+  }
+
+  &.isFloating {
+    @apply z-50;
+    & .inner {
+      @apply flex justify-center items-center;
+    }
+  }
+
+  &.isClippable {
+    @apply will-change-[opacity,transform,clip-path];
+
+    & .inner > * {
+      @apply -translate-x-1/2 -translate-y-1/2;
+    }
+  }
+
+  &.isResizable {
+    @apply /*overflow-hidden */will-change-[opacity,transform,clip-path/*,width,height*/];
+
+    & .inner {
+      @apply w-full h-full will-change-[width,height,transform];
+    }
+  }
+
+  &.isInitiallyVisible {
+    @apply block;
+  }
+}
+
+
